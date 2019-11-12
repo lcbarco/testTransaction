@@ -8,6 +8,8 @@ class ExampleService {
     Example saveTest() {
         Example example = Example.findOrCreateWhere(name: 'NAME')
         example.save()
+        Example example2 = Example.findOrCreateWhere(name: 'NAME')
+        example2.save()
         example
     }
 }
